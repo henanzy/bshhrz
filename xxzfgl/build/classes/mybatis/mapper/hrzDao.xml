@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.hnzy.hot.dao.HrzDao">
+	
+	<resultMap id="map" type="java.util.HashMap">
+	</resultMap>
+ 
+     <select id="findHrzxx"  resultMap="map">
+    
+      select * from hrz
+    
+    </select> 
+     <update id="updateHrz">
+     update hrz set hrz=#{hrz},gsdd=#{gsdd},zlmc=#{zlmc},grqy=#{grqy},Kxs=#{Kxs},shejimj=#{shejimj},
+     shijimj=#{shijimj},dz=#{dz},bgsj=#{bgsj},rbdz=#{rbdz},lxr=#{lxr},rblx=#{rblx}
+     where id=#{id}
+    </update>
+    <insert id="insertHrz">
+    insert into hrz (hrz,gsdd,zlmc,grqy,Kxs,shejimj,shijimj,dz,bgsj,rbdz,lxr,rblx) 
+    values (#{hrz},#{gsdd},#{zlmc},#{grqy},#{Kxs},#{shejimj},#{shijimj},#{dz},#{bgsj},#{rbdz},#{lxr},#{rblx})
+    </insert> 
+    <delete id="deleteHrz">
+    delete from hrz where id=#{id}
+    </delete>
+    <!--大表集抄 -->
+    <select id="finddbjc"  resultMap="map">
+   select h.hrz,h.gsdd,h.zlmc,h.grqy,h.Kxs,h.shejimj,h.dz,h.bgsj,h.rbdz,h.lxr,s.id ,s.zdl,s.Axdy,s.Bxdy,s.Cxdy,s.ABxdy,s.BCxdy,s.CAxdy,s.Axdl,s.Bxdl,s.Cxdl,s.ssll,s.ssrl,s.ljll,s.ljrl,s.gswd
+    ,s.gsyl,s.hsyl,s.gsyl,s.hsyl,s.sxyw,s.zjrcwd1,s.zjlcwd2,s.zjlcwd3,s.zjlcwd4,s.zjljwd1,s.zjljwd2,s.zjljwd3,s.zjljwd4,s.zjrcwd1,s.zjrcwd2,s.zjrcwd3,s.zjrcwd4,s.zjrjwd1,s.zjrjwd2,s.zjrjwd3,s.zjrjwd4,s.time,s.hswd,s.ghyc,s.bsljll
+     from hrz h,SbHistory s where h.hrz= s.hrz
+  
+    <if test="hrz!=null and hrz!=''">
+		  and  h.hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if>
+    </select>
+    
+    <update id="updateRy">
+     update ssb_ry set ry_csqkgzt_1=#{ry_csqkgzt_1},ry_csqljll_1=#{ry_csqljll_1},ry_csqqt_1=#{ry_csqqt_1},ry_csqsdzt_1=#{ry_csqsdzt_1}
+     ,ry_csqssll_1=#{ry_csqssll_1} ,ry_csqzdzt_1=#{ry_csqzdzt_1},ry_cwqdsbj_1=#{ry_cwqdsbj_1},ry_cwqdscf_1=#{ry_cwqdscf_1},ry_cwqdsjc_1=#{ry_cwqdsjc_1}
+     ,ry_cwqhyl_1=#{ry_cwqhyl_1},ry_cwqhyljy_1=#{ry_cwqhyljy_1},ry_cwqhyllc_1=#{ry_cwqhyllc_1},ry_cwqhylsx_1=#{ry_cwqhylsx_1}
+     ,ry_cwqhylxx_1=#{ry_cwqhylxx_1},ry_cwqqhyc_1=#{ry_cwqqhyc_1},ry_cwqqyl_1=#{ry_cwqqyl_1},ry_cwqqyljy_1=#{ry_cwqqyljy_1}
+     ,ry_cwqqyllc_1=#{ry_cwqqyllc_1},ry_cwqqylsx_1=#{ry_cwqqylsx_1},ry_cwqqylxx_1=#{ry_cwqqylxx_1},ry_jzbsljll_1=#{ry_jzbsljll_1}
+     ,ry_jzbsssll_1=#{ry_jzbsssll_1},ry_jbgzzt_1=#{ry_jbgzzt_1},ry_jbkzfs_1=#{ry_jbkzfs_1},ry_jbplfk_1=#{ry_jbplfk_1},ry_jbplsd_1=#{ry_jbplsd_1}
+     ,ry_jbqt_1=#{ry_jbqt_1},ry_jbyxzt_1=#{ry_jbyxzt_1},ry_qsbzdpl_1=#{ry_qsbzdpl_1},ry_ryjljll_1=#{ry_ryjljll_1},ry_ryjssll_1=#{ry_ryjssll_1}
+     ,ry_ryjyw_1=#{ry_ryjyw_1} ,ry_ryjywjy_1=#{ry_ryjywjy_1},ry_ryjywlc_1=#{ry_ryjywlc_1},ry_ryjywsx_1=#{ry_ryjywsx_1},ry_ryjywxx_1=#{ry_ryjywxx_1}
+     ,ry_ryjywsxbj_1=#{ry_ryjywsxbj_1} ,ry_ryjywxxbj_1=#{ry_ryjywxxbj_1},
+     ry_csqkgzt_2=#{ry_csqkgzt_2},ry_csqljll_2=#{ry_csqljll_2},ry_csqqt_2=#{ry_csqqt_2},ry_csqsdzt_2=#{ry_csqsdzt_2}
+     ,ry_csqssll_2=#{ry_csqssll_2} ,ry_csqzdzt_2=#{ry_csqzdzt_2},ry_cwqdsbj_2=#{ry_cwqdsbj_2},ry_cwqdscf_2=#{ry_cwqdscf_2},ry_cwqdsjc_2=#{ry_cwqdsjc_2}
+     ,ry_cwqhyl_2=#{ry_cwqhyl_2},ry_cwqhyljy_2=#{ry_cwqhyljy_2},ry_cwqhyllc_2=#{ry_cwqhyllc_2},ry_cwqhylsx_2=#{ry_cwqhylsx_2}
+     ,ry_cwqhylxx_2=#{ry_cwqhylxx_2},ry_cwqqhyc_2=#{ry_cwqqhyc_2},ry_cwqqyl_2=#{ry_cwqqyl_2},ry_cwqqyljy_2=#{ry_cwqqyljy_2}
+     ,ry_cwqqyllc_2=#{ry_cwqqyllc_2},ry_cwqqylsx_2=#{ry_cwqqylsx_2},ry_cwqqylxx_2=#{ry_cwqqylxx_2},ry_jzbsljll_2=#{ry_jzbsljll_2}
+     ,ry_jzbsssll_2=#{ry_jzbsssll_2},ry_jbgzzt_2=#{ry_jbgzzt_2},ry_jbkzfs_2=#{ry_jbkzfs_2},ry_jbplfk_2=#{ry_jbplfk_2},ry_jbplsd_2=#{ry_jbplsd_2}
+     ,ry_jbqt_2=#{ry_jbqt_2},ry_jbyxzt_2=#{ry_jbyxzt_2},ry_qsbzdpl_2=#{ry_qsbzdpl_2},ry_ryjljll_2=#{ry_ryjljll_2},ry_ryjssll_2=#{ry_ryjssll_2}
+     ,ry_ryjyw_2=#{ry_ryjyw_2} ,ry_ryjywjy_2=#{ry_ryjywjy_2},ry_ryjywlc_2=#{ry_ryjywlc_2},ry_ryjywsx_2=#{ry_ryjywsx_2},ry_ryjywxx_2=#{ry_ryjywxx_2}
+     ,ry_ryjywsxbj_2=#{ry_ryjywsxbj_2} ,ry_ryjywxxbj_2=#{ry_ryjywxxbj_2}
+     ,ry_jbgzzt_3=#{ry_jbgzzt_3},ry_jbplfk_3=#{ry_jbplfk_3},ry_jbplsd_3=#{ry_jbplsd_3},ry_jbqt_3=#{ry_jbqt_3},ry_jbyxzt_3=#{ry_jbyxzt_3}
+     ,ry_ryjljll_3=#{ry_ryjljll_3} ,ry_ryjssll_3=#{ry_ryjssll_3},ry_ryjyw_3=#{ry_ryjyw_3},ry_ryjywjy_3=#{ry_ryjywjy_3},ry_ryjywlc_3=#{ry_ryjywlc_3}
+     ,ry_ryjywsx_3=#{ry_ryjywsx_3},ry_ryjywxx_3=#{ry_ryjywxx_3},ry_ryjywsxbj_3=#{ry_ryjywsxbj_3},ry_ryjywxxbj_3=#{ry_ryjywxxbj_3}
+     ,ry_jbgzzt_4=#{ry_jbgzzt_4},ry_jbplfk_4=#{ry_jbplfk_4},ry_jbplsd_4=#{ry_jbplsd_4},ry_jbqt_4=#{ry_jbqt_4},ry_jbyxzt_4=#{ry_jbyxzt_4}
+     ,ry_ryjljll_4=#{ry_ryjljll_4} ,ry_ryjssll_4=#{ry_ryjssll_4},ry_ryjyw_4=#{ry_ryjyw_4},ry_ryjywjy_4=#{ry_ryjywjy_4},ry_ryjywlc_4=#{ry_ryjywlc_4}
+     ,ry_ryjywsx_4=#{ry_ryjywsx_4},ry_ryjywxx_4=#{ry_ryjywxx_4},ry_ryjywsxbj_4=#{ry_ryjywsxbj_4},ry_ryjywxxbj_4=#{ry_ryjywxxbj_4}
+     ,Axdl=#{Axdl},Axdy=#{Axdy},Bxdl=#{Bxdl},Bxdy=#{Bxdy},Cxdl=#{Cxdl},Cxdy=#{Cxdy},cw1hylsxbj=#{cw1hylsxbj},cw1hylxxbj=#{cw1hylxxbj}
+     ,cw1qylsxbj=#{cw1qylsxbj},cw1qylxxbj=#{cw1qylxxbj},cw2hylsxbj=#{cw2hylsxbj},cw2hylxxbj=#{cw2hylxxbj},cw2qylsxbj=#{cw2qylsxbj}
+     ,cw2qylxxbj=#{cw2qylxxbj},fjsqyc=#{fjsqyc},fsqwd=#{fsqwd},fsqwdjy=#{fsqwdjy},fsqwdlcsx=#{fsqwdlcsx},fsqwdlcxx=#{fsqwdlcxx}
+     ,fsqwdsx=#{fsqwdsx},fsqwdsxbj=#{fsqwdsxbj},fsqwdxx=#{fsqwdxx},fsqwdxxbj=#{fsqwdxxbj},glys=#{glys},jsqwd=#{jsqwd},jsqwdjy=#{jsqwdjy}
+     ,jsqwdlcsx=#{jsqwdlcsx},jsqwdlcxx=#{jsqwdlcxx},jsqwdsx=#{jsqwdsx},jsqwdsxbj=#{jsqwdsxbj},jsqwdxx=#{jsqwdxx},jsqwdxxbj=#{jsqwdxxbj}
+     ,jsqyl=#{jsqyl},jsqyljy=#{jsqyljy},jsqyllc=#{jsqyllc},jsqylsx=#{jsqylsx},jsqylsxbj=#{jsqylsxbj},jsqylxx=#{jsqylxx}	,jsqylxxbj=#{jsqylxxbj}	
+     ,pdfwd=#{pdfwd},pdfwdjy=#{pdfwdjy}	,pdfwdlcsx=#{pdfwdlcsx}	,pdfwdlcxx=#{pdfwdlcxx}	,pdfwdsx=#{pdfwdsx}	,pdfwdsxbj=#{pdfwdsxbj}	
+     ,pdfwdxx=#{pdfwdxx},pdfwdxxbj=#{pdfwdxxbj},pl=#{pl},ryjzljll=#{ryjzljll},ryjzssll=#{ryjzssll},ryzssllsd=#{ryzssllsd},rhsljll=#{rhsljll}
+     ,rhsssll=#{rhsssll},swwd=#{swwd},swwdjy=#{swwdjy},swwdlcsx=#{swwdlcsx},swwdlcxx=#{swwdlcxx},sxywgdbj=#{sxywgdbj},sxyw=#{sxyw}
+     ,sxywgdz=#{sxywgdz},sxywjy=#{sxywjy},sxywlc=#{sxywlc},sxywsx=#{sxywsx},sxywsxbj=#{sxywsxbj},sxywxx=#{sxywxx},sxywxxbj=#{sxywxxbj}
+     ,zlsljll=#{zlsljll},zlsssll=#{zlsssll},zdl=#{zdl},time=#{time}
+     
+     where hrz=#{hrz}
+    </update>
+    <update id="updateJz">
+    update ssb_jz set bsbgzfk_1=#{bsbgzfk_1},bsbgzfk_2=#{bsbgzfk_2},bsbyxfk_1=#{bsbyxfk_1},bsbyxfk_2=#{bsbyxfk_2},bsbyxsj_1=#{bsbyxsj_1},
+    bsbyxsj_2=#{bsbyxsj_2},bsbyxsjql_1=#{bsbyxsjql_1},bsbyxsjql_2=#{bsbyxsjql_2},bsbzdyxkg_1=#{bsbzdyxkg_1},bsbzdyxkg_2=#{bsbzdyxkg_2},
+    xhbgzfk_1=#{xhbgzfk_1},xhbgzfk_2=#{xhbgzfk_2},xhbyxfk_1=#{xhbyxfk_1},xhbyxfk_2=#{xhbyxfk_2},xhbyxsj_1=#{xhbyxsj_1},xhbyxsj_2=#{xhbyxsj_2},
+    xhbyxsjql_1=#{xhbyxsjql_1},xhbyxsjql_2=#{xhbyxsjql_2},xhbzdyxkg_1=#{xhbzdyxkg_1},xhbzdyxkg_2=#{xhbzdyxkg_2},btlsd=#{btlsd},bsbPIDblsd=#{bsbPIDblsd},
+    bsbPIDjfsd=#{bsbPIDjfsd},bsbPIDwfsd=#{bsbPIDwfsd},bsbdbsjsd=#{bsbdbsjsd},bsbplfk=#{bsbplfk},bsbszdqh=#{bsbszdqh},bsbyxdb=#{bsbyxdb}
+    ,bsbpqgz=#{bsbpqgz},bshxpcsd=#{bshxpcsd},bsplsd=#{bsplsd},bssmplsd=#{bssmplsd},bsylsd=#{bsylsd},czbtlsd=#{czbtlsd},czjojysd=#{czjojysd}
+    ,ddfPIDblsd=#{ddfPIDblsd},ddfPIDjfsd=#{ddfPIDjfsd},ddfPIDwfsd=#{ddfPIDwfsd},ddfszdqh=#{ddfszdqh},ddtjffwfk=#{ddtjffwfk}
+    ,ecghsyc=#{ecghsyc},ecgscwbj=#{ecgscwbj},ecgscybj=#{ecgscybj},ecgsdwbj=#{ecgsdwbj},ecgswd=#{ecgswd},ecgswdgdsdz=#{ecgswdgdsdz}
+    ,ecgswdggsdz=#{ecgswdggsdz},ecgsyl=#{ecgsyl},ecgsylgxbhsd=#{ecgsylgxbhsd},ecgsylgxtxhb=#{ecgsylgxtxhb},echsyldxbhsd=#{echsyldxbhsd}
+    ,echsyldxtxhb=#{echsyldxtxhb},ecgsylggsdz=#{ecgsylggsdz},echsylgdsdz=#{echsylgdsdz},echssybj=#{echssybj},echswd=#{echswd}
+    ,echsyl=#{echsyl},ecljll=#{ecljll},eclljjlxs=#{eclljjlxs},eclljzdzsd=#{eclljzdzsd},ecssll=#{ecssll},ecylbsqdxlcsd=#{ecylbsqdxlcsd}
+    ,ecylbsqgxlcsd=#{ecylbsqgxlcsd},gzbj=#{gzbj},jojysd=#{jojysd},sdgswdsd1=#{sdgswdsd1},sdgswdsd2=#{sdgswdsd2},sdgswdsd3=#{sdgswdsd3}
+    ,sdgswdsd4=#{sdgswdsd4},sdgswdsd5=#{sdgswdsd5},sdgswdsd6=#{sdgswdsd6},sdgswdsd7=#{sdgswdsd7},sdsd1=#{sdsd1},sdsd2=#{sdsd2},
+    sdsd3=#{sdsd3},sdsd4=#{sdsd4},sdsd5=#{sdsd5},sdsd6=#{sdsd6},sdkdsd=#{sdkdsd},sswdsd=#{sswdsd},wdbsqdxlcsd=#{wdbsqdxlcsd},
+    wdbsqgxlcsd=#{wdbsqgxlcsd},wkxz=#{wkxz},
+    </update>
+    
+    <insert id="InsertHis_ry">
+    insert into his_ry (ry_csqkgzt_1,ry_csqljll_1,ry_csqqt_1,ry_csqsdzt_1,ry_csqssll_1,ry_csqzdzt_1,ry_cwqdsbj_1,ry_cwqdscf_1,
+    ry_cwqdsjc_1,ry_cwqhyl_1,ry_cwqhyljy_1,ry_cwqhyllc_1,ry_cwqhylsx_1,ry_cwqhylxx_1,ry_cwqqhyc_1,ry_cwqqyl_1,
+     ry_cwqqyljy_1,ry_cwqqyllc_1,ry_cwqqylsx_1,ry_cwqqylxx_1,ry_jzbsljll_1,ry_jzbsssll_1,ry_jbgzzt_1,ry_jbkzfs_1,
+     ry_jbplfk_1,ry_jbplsd_1,ry_jbqt_1,ry_jbyxzt_1,ry_qsbzdpl_1,ry_ryjljll_1,ry_ryjssll_1,ry_ryjyw_1,ry_ryjywlc_1,ry_ryjywjy_1,
+     ry_ryjywsx_1,ry_ryjywxx_1,ry_ryjywsxbj_1,ry_ryjywxxbj_1,
+     ry_csqkgzt_2,ry_csqljll_2,ry_csqqt_2,ry_csqsdzt_2,ry_csqssll_2,ry_csqzdzt_2,ry_cwqdsbj_2,ry_cwqdscf_2,
+    ry_cwqdsjc_2,ry_cwqhyl_2,ry_cwqhyljy_2,ry_cwqhyllc_2,ry_cwqhylsx_2,ry_cwqhylxx_2,ry_cwqqhyc_2,ry_cwqqyl_2,
+     ry_cwqqyljy_2,ry_cwqqyllc_2,ry_cwqqylsx_2,ry_cwqqylxx_2,ry_jzbsljll_2,ry_jzbsssll_2,ry_jbgzzt_2,ry_jbkzfs_2,
+     ry_jbplfk_2,ry_jbplsd_2,ry_jbqt_2,ry_jbyxzt_2,ry_qsbzdpl_2,ry_ryjljll_2,ry_ryjssll_2,ry_ryjyw_2,ry_ryjywlc_2,ry_ryjywjy_2,
+     ry_ryjywsx_2,ry_ryjywxx_2,ry_ryjywsxbj_2,ry_ryjywxxbj_2,
+     ry_jbgzzt_3,ry_jbplfk_3,ry_jbplsd_3,ry_jbqt_3,ry_jbyxzt_3,ry_ryjljll_3,ry_ryjssll_3,ry_ryjyw_3,ry_ryjywjy_3,
+     ry_ryjywlc_3,ry_ryjywsx_3,ry_ryjywxx_3,ry_ryjywsxbj_3,ry_ryjywxxbj_3,
+     ry_jbgzzt_4,ry_jbplfk_4,ry_jbplsd_4,ry_jbqt_4,ry_jbyxzt_4,ry_ryjljll_4,ry_ryjssll_4,ry_ryjyw_4,ry_ryjywjy_4,
+     ry_ryjywlc_4,ry_ryjywsx_4,ry_ryjywxx_4,ry_ryjywsxbj_4,ry_ryjywxxbj_4,Axdl,Axdy,Bxdl,Bxdy,Cxdl,Cxdy,
+     cw1hylsxbj,cw1hylxxbj,cw1qylsxbj,cw1qylxxbj,cw2hylsxbj,cw2hylxxbj,cw2qylsxbj,cw2qylxxbj,fjsqyc,
+     fsqwd,fsqwdjy,fsqwdlcsx,fsqwdlcxx,fsqwdsx,fsqwdsxbj,fsqwdxx,fsqwdxxbj,glys,jsqwd,jsqwdjy,
+     jsqwdlcsx,jsqwdlcxx,jsqwdsx,jsqwdsxbj,jsqwdxx,jsqwdxxbj,jsqyl,jsqyljy,jsqyllc,jsqylsx,jsqylsxbj,
+     jsqylxx,jsqylxxbj,pdfwd,pdfwdjy,pdfwdlcsx,pdfwdlcxx,pdfwdsx,pdfwdsxbj,pdfwdxx,pdfwdxxbj,
+     pl,ryjzljll,ryjzssll,ryzssllsd,rhsljll,rhsssll,swwd,swwdjy,swwdlcsx,swwdlcxx,sxyw,
+     sxywgdbj,sxywgdz,sxywjy,sxywlc,sxywsx,sxywsxbj,sxywxx,sxywxxbj,zlsljll,zlsssll,zdl,time,hrz
+     ) 
+     
+    values(#{ry_csqkgzt_1},#{ry_csqljll_1},#{ry_csqqt_1},#{ry_csqsdzt_1},#{ry_csqssll_1},#{ry_csqzdzt_1},#{ry_cwqdsbj_1},#{ry_cwqdscf_1},
+    #{ry_cwqdsjc_1},#{ry_cwqhyl_1},#{ry_cwqhyljy_1},#{ry_cwqhyllc_1},#{ry_cwqhylsx_1},#{ry_cwqhylxx_1},#{ry_cwqqhyc_1},#{ry_cwqqyl_1},
+    #{ry_cwqqyljy_1},#{ry_cwqqyllc_1},#{ry_cwqqylsx_1},#{ry_cwqqylxx_1},#{ry_jzbsljll_1},#{ry_jzbsssll_1},#{ry_jbgzzt_1},#{ry_jbkzfs_1},
+    #{ry_jbplfk_1},#{ry_jbplsd_1},#{ry_jbplsd_1},#{ry_jbyxzt_1},#{ry_qsbzdpl_1},#{ry_ryjljll_1},#{ry_ryjssll_1},#{ry_ryjyw_1},#{ry_ryjywlc_1},#{ry_ryjywjy_1},
+    #{ry_ryjywsx_1},#{ry_ryjywxx_1},#{ry_ryjywsxbj_1},#{ry_ryjywxxbj_1},    
+    #{ry_csqkgzt_2},#{ry_csqljll_2},#{ry_csqqt_2},#{ry_csqsdzt_2},#{ry_csqssll_2},#{ry_csqzdzt_2},#{ry_cwqdsbj_2},#{ry_cwqdscf_2},
+    #{ry_cwqdsjc_2},#{ry_cwqhyl_2},#{ry_cwqhyljy_2},#{ry_cwqhyllc_2},#{ry_cwqhylsx_2},#{ry_cwqhylxx_2},#{ry_cwqqhyc_2},#{ry_cwqqyl_2},
+    #{ry_cwqqyljy_2},#{ry_cwqqyllc_2},#{ry_cwqqylsx_2},#{ry_cwqqylxx_2},#{ry_jzbsljll_2},#{ry_jzbsssll_2},#{ry_jbgzzt_2},#{ry_jbkzfs_2},
+    #{ry_jbplfk_2},#{ry_jbplsd_2},#{ry_jbplsd_2},#{ry_jbyxzt_2},#{ry_qsbzdpl_2},#{ry_ryjljll_2},#{ry_ryjssll_2},#{ry_ryjyw_2},#{ry_ryjywlc_2},#{ry_ryjywjy_2},
+    #{ry_ryjywsx_2},#{ry_ryjywxx_2},#{ry_ryjywsxbj_2},#{ry_ryjywxxbj_2},
+    #{ry_jbgzzt_3},#{ry_jbplfk_3},#{ry_jbplfk_3},#{ry_jbqt_3},#{ry_jbyxzt_3},#{ry_ryjljll_3},#{ry_ryjssll_3},#{ry_ryjyw_3},#{ry_ryjywjy_3},
+    #{ry_ryjywlc_3},#{ry_ryjywsx_3},#{ry_ryjywxx_3},#{ry_ryjywsxbj_3},#{ry_ryjywxxbj_3},
+    #{ry_jbgzzt_4},#{ry_jbplfk_4},#{ry_jbplfk_4},#{ry_jbqt_4},#{ry_jbyxzt_4},#{ry_ryjljll_4},#{ry_ryjssll_4},#{ry_ryjyw_4},#{ry_ryjywjy_4},
+    #{ry_ryjywlc_4},#{ry_ryjywsx_4},#{ry_ryjywxx_4},#{ry_ryjywsxbj_4},#{ry_ryjywxxbj_4},#{Axdl},#{Axdy},#{Bxdl},#{Bxdy},#{Cxdl},#{Cxdy},
+    #{cw1hylsxbj},#{cw1hylxxbj},#{cw1qylsxbj},#{cw1qylxxbj}, #{cw2hylsxbj},#{cw2hylxxbj},#{cw2qylsxbj},#{cw2qylxxbj},#{fjsqyc},
+    #{fsqwd},#{fsqwdjy},#{fsqwdlcsx},#{fsqwdlcxx},#{fsqwdsx},#{fsqwdsxbj},#{fsqwdxx},#{fsqwdxxbj},#{glys},#{jsqwd},#{jsqwdjy},
+    #{jsqwdlcsx},#{jsqwdlcxx},#{jsqwdsx},#{jsqwdsxbj},#{jsqwdxx},#{jsqwdxxbj},#{jsqyl},#{jsqyljy},#{jsqyllc},#{jsqylsx},#{jsqylsxbj},
+    #{jsqylxx},#{jsqylxxbj},#{pdfwd},#{pdfwdjy},#{pdfwdlcsx},#{pdfwdlcxx},#{pdfwdsx},#{pdfwdsxbj},#{pdfwdxx},#{pdfwdxxbj},
+    #{pl}, #{ryjzljll},#{ryjzssll},#{ryzssllsd},#{rhsljll},#{rhsssll},#{swwd},#{swwdjy},#{swwdlcsx},#{swwdlcxx},#{sxyw},
+    #{sxywgdbj},#{sxywgdz},#{sxywjy},#{sxywlc},#{sxywsx},#{sxywsxbj},#{sxywxx},#{sxywxxbj},#{zlsljll},#{zlsssll},#{zdl},
+    #{time},#{hrz}
+    )
+    </insert>
+    <insert id="InsertHis_jz">
+     insert into his_ry(bsbgzfk_1,bsbgzfk_2,bsbyxfk_1,bsbyxfk_2,bsbyxsj_1,bsbyxsj_2,bsbyxsjql_1,bsbyxsjql_2
+     bsbzdyxkg_1,bsbzdyxkg_2,xhbgzfk_1,xhbgzfk_2,xhbyxfk_1,xhbyxfk_2,xhbyxsj_1,xhbyxsj_2,xhbyxsjql_1,xhbyxsjql_2,
+     xhbzdyxkg_1,xhbzdyxkg_2,btlsd,bsbPIDblsd,bsbPIDjfsd,bsbPIDwfsd,bsbdbsjsd,bsbplfk,bsbszdqh,bsbyxdb,
+     bsbpqgz,bshxpcsd,bsplsd,bssmplsd,bsylsd,czbtlsd,czjojysd,ddfPIDblsd,ddfPIDjfsd,ddfPIDwfsd,
+     ddfPIDwfsd,ddfszdqh,ddtjffwfk,ecghsyc,ecgscwbj,ecgscybj,ecgsdwbj,ecgswd,ecgswdgdsdz,ecgswdggsdz,
+     ecgsyl,ecgsylgxbhsd,ecgsylgxtxhb,echsyldxbhsd,echsyldxtxhb,ecgsylggsdz,echsylgdsdz,echssybj,
+     echswd,echsyl,ecljll,eclljjlxs,eclljzdzsd,ecssll,ecylbsqdxlcsd,ecylbsqgxlcsd,gzbj,jojysd,
+     sdgswdsd1,sdgswdsd2,sdgswdsd3,sdgswdsd4,sdgswdsd5,sdgswdsd6,sdgswdsd7,sdsd1,sdsd2,sdsd3,
+     sdsd4,sdsd5,sdsd6,sdkdsd,sswdsd,wdbsqdxlcsd,wdbsqgxlcsd,wkxz,xhbPIDblsd,xhbPIDjfsd,xhbPIDwfsd,
+     xhbdbsjsd,xhbplfk,xhbszdqh,xhbyxdb,xhbbpqgz,xhplsd,xhycsd,ycgswd,ycgsyl,ychscwbj,ychswd,
+     ychsyl,ychswdggsdz,ycljll,ycssll,yclljljxs,yclljzdzsd,ycylbsqdxlcsd,ycylbsqgxlcsd,yyoreyxzBSB,
+     yyoreyxzXHB,zdwdsd,time,hrz
+     )
+      values(#{bsbgzfk_1},#{bsbgzfk_2},#{bsbyxfk_1},#{bsbyxfk_2},#{bsbyxsj_1},#{bsbyxsj_2},#{bsbyxsjql_1},#{bsbyxsjql_2},
+      #{bsbzdyxkg_1},#{bsbzdyxkg_2},#{xhbgzfk_1},#{xhbgzfk_2},#{xhbyxfk_1},#{xhbyxfk_2},#{xhbyxsj_1},#{xhbyxsj_2},#{xhbyxsjql_1},#{xhbyxsjql_2},
+      #{xhbzdyxkg_1},#{xhbzdyxkg_2},#{btlsd},#{bsbPIDblsd},#{bsbPIDjfsd},#{bsbPIDwfsd},#{bsbdbsjsd},#{bsbplfk},#{bsbszdqh},#{bsbyxdb},
+      #{bsbpqgz},#{bshxpcsd},#{bsplsd},#{bssmplsd},#{bsylsd},#{czbtlsd},#{czjojysd},#{ddfPIDblsd},#{ddfPIDjfsd},#{ddfPIDwfsd},
+      #{ddfPIDwfsd},#{ddfszdqh},#{ddtjffwfk},#{ecghsyc},#{ecgscwbj},#{ecgscybj},#{ecgsdwbj},#{ecgswd},#{ecgswdgdsdz},#{ecgswdggsdz},
+      #{ecgsyl},#{ecgsylgxbhsd},#{ecgsylgxtxhb},#{echsyldxbhsd},#{echsyldxtxhb},#{ecgsylggsdz},#{echsylgdsdz},#{echssybj},
+      #{echswd},#{echsyl},#{ecljll},#{eclljjlxs},#{eclljzdzsd},#{ecssll},#{ecylbsqdxlcsd},#{ecylbsqgxlcsd},#{gzbj},#{jojysd},
+      #{sdgswdsd1},#{sdgswdsd2},#{sdgswdsd3},#{sdgswdsd4},#{sdgswdsd5},#{sdgswdsd6},#{sdgswdsd7},#{sdsd1},#{sdsd2},#{sdsd3},
+      #{sdsd4},#{sdsd5},#{sdsd6},#{sdkdsd},#{sswdsd},#{wdbsqdxlcsd},#{wdbsqgxlcsd},#{wkxz},#{xhbPIDblsd},#{xhbPIDjfsd},#{xhbPIDwfsd},
+      #{xhbdbsjsd},#{xhbplfk},#{xhbszdqh},#{xhbyxdb},#{xhbbpqgz},#{xhplsd},#{xhycsd},#{ycgswd},#{ycgsyl},#{ychscwbj},#{ychswd},
+      #{ychsyl},#{ychswdggsdz},#{ycljll},#{ycssll},#{yclljljxs},#{yclljzdzsd},#{ycylbsqdxlcsd},#{ycylbsqgxlcsd},#{yyoreyxzBSB},
+      #{yyoreyxzXHB},#{zdwdsd},#{time},#{hrz}
+      )
+    </insert>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.hnzy.hot.dao.UserDao">
+	<resultMap type="User" id="user">
+		<id property="id" column="ID" />
+		<result property="userName" column="UserName" />
+		<result property="password" column="Password" />
+	</resultMap>
+		<select id="findUserByNameAndMD5" parameterType="User" resultType="User">
+		select * from k_UserLogin where UserName=#{userName} and PassWord=#{passWord}
+	</select>
+	<select id="findUserPass" parameterType="java.lang.String" resultType="java.lang.String">
+		select PassWord from k_UserLogin  where ID=#{ID} 
+	</select>
+	
+	<update id="update" parameterType="User">
+    update k_UserLogin set UserName=#{userName},PassWord=#{passWord} where ID=#{ID}
+    </update>
+    <select  id="findByName" parameterType="User" resultType="User">
+    select UserName from k_UserLogin where UserName=#{userName}
+    </select>
+    <insert id="InsUsePass"  parameterType="User">
+    insert into k_UserLogin (UserName,Password) values (#{userName},#{password})
+    </insert>
+</mapper>

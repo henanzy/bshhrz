@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "http://mybatis.org/dtd/mybatis-3-mapper.dtd" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.hnzy.hot.dao.HistoryDao">
+	
+	<resultMap id="map" type="java.util.HashMap">
+	</resultMap>
+    <insert id="InsertHis" >
+    insert into SbHistory (zdl,Axdy,Bxdy,Cxdy,ABxdy,BCxdy,CAxdy,Axdl,Bxdl,Cxdl,ssll,ssrl,ljll
+    ,ljrl,gswd,gsyl,hsyl,sxyw,zjrcwd1,zjrjwd1,zjljwd1,zjlcwd1,zjrcwd2,zjrjwd2,zjljwd2,zjlcwd2
+    ,zjrcwd3,zjrjwd3,zjljwd3,zjlcwd3,zjrcwd4,zjrjwd4,zjljwd4,zjlcwd4,time,hswd,hrz,ghyc,bsljll)
+     values (#{zdl},#{Axdy},#{Bxdy},#{Cxdy},#{ABxdy},#{BCxdy},#{CAxdy},#{Axdl},#{Bxdl},#{Cxdl},#{ssll}
+     ,#{ssrl},#{ljll},#{ljrl},#{gswd},#{gsyl},#{hsyl},#{sxyw},#{zjrcwd1},#{zjrjwd1},#{zjljwd1},#{zjlcwd1}
+     ,#{zjrcwd2},#{zjrjwd2},#{zjljwd2},#{zjlcwd2},#{zjrcwd3},#{zjrjwd3},#{zjljwd3},#{zjlcwd3}
+     ,#{zjrcwd4},#{zjrjwd4},#{zjljwd4},#{zjlcwd4},#{time},#{hswd},#{hrz},#{ghyc},#{bsljll})
+    </insert>
+     <insert id="rbbInsertHis" >
+      insert into rbbHistory (zdl,Axdy,Bxdy,Cxdy,ABxdy,BCxdy,CAxdy,Axdl,Bxdl,Cxdl,ssll,ssrl,ljll
+    ,ljrl,gswd,gsyl,hsyl,sxyw,zjrcwd1,zjrjwd1,zjljwd1,zjlcwd1,zjrcwd2,zjrjwd2,zjljwd2,zjlcwd2
+    ,zjrcwd3,zjrjwd3,zjljwd3,zjlcwd3,zjrcwd4,zjrjwd4,zjljwd4,zjlcwd4,time,hswd,hrz,ghyc,bsljll)
+     values (#{zdl},#{Axdy},#{Bxdy},#{Cxdy},#{ABxdy},#{BCxdy},#{CAxdy},#{Axdl},#{Bxdl},#{Cxdl},#{ssll}
+     ,#{ssrl},#{ljll},#{ljrl},#{gswd},#{gsyl},#{hsyl},#{sxyw},#{zjrcwd1},#{zjrjwd1},#{zjljwd1},#{zjlcwd1}
+     ,#{zjrcwd2},#{zjrjwd2},#{zjljwd2},#{zjlcwd2},#{zjrcwd3},#{zjrjwd3},#{zjljwd3},#{zjlcwd3}
+     ,#{zjrcwd4},#{zjrjwd4},#{zjljwd4},#{zjlcwd4},#{time},#{hswd},#{hrz},#{ghyc},#{bsljll})
+    </insert>
+     <insert id="ybbInsertHis" >
+    insert into ybbHistory (zdl,Axdy,Bxdy,Cxdy,ABxdy,BCxdy,CAxdy,Axdl,Bxdl,Cxdl,ssll,ssrl,ljll
+    ,ljrl,gswd,gsyl,hsyl,sxyw,zjrcwd1,zjrjwd1,zjljwd1,zjlcwd1,zjrcwd2,zjrjwd2,zjljwd2,zjlcwd2
+    ,zjrcwd3,zjrjwd3,zjljwd3,zjlcwd3,zjrcwd4,zjrjwd4,zjljwd4,zjlcwd4,time,hswd,hrz,ghyc,bsljll)
+     values (#{zdl},#{Axdy},#{Bxdy},#{Cxdy},#{ABxdy},#{BCxdy},#{CAxdy},#{Axdl},#{Bxdl},#{Cxdl},#{ssll}
+     ,#{ssrl},#{ljll},#{ljrl},#{gswd},#{gsyl},#{hsyl},#{sxyw},#{zjrcwd1},#{zjrjwd1},#{zjljwd1},#{zjlcwd1}
+     ,#{zjrcwd2},#{zjrjwd2},#{zjljwd2},#{zjlcwd2},#{zjrcwd3},#{zjrjwd3},#{zjljwd3},#{zjlcwd3}
+     ,#{zjrcwd4},#{zjrjwd4},#{zjljwd4},#{zjlcwd4},#{time},#{hswd},#{hrz},#{ghyc},#{bsljll})
+    </insert>
+     <insert id="zbbInsertHis" >
+    insert into zbbHistory (zdl,Axdy,Bxdy,Cxdy,ABxdy,BCxdy,CAxdy,Axdl,Bxdl,Cxdl,ssll,ssrl,ljll
+    ,ljrl,gswd,gsyl,hsyl,sxyw,zjrcwd1,zjrjwd1,zjljwd1,zjlcwd1,zjrcwd2,zjrjwd2,zjljwd2,zjlcwd2
+    ,zjrcwd3,zjrjwd3,zjljwd3,zjlcwd3,zjrcwd4,zjrjwd4,zjljwd4,zjlcwd4,time,hswd,hrz)
+     values (#{zdl},#{Axdy},#{Bxdy},#{Cxdy},#{ABxdy},#{BCxdy},#{CAxdy},#{Axdl},#{Bxdl},#{Cxdl},#{ssll}
+     ,#{ssrl},#{ssrl},#{ljll},#{ljrl},#{gswd},#{gsyl},#{sxyw},#{zjrcwd1},#{zjrjwd1},#{zjljwd1},#{zjlcwd1}
+     ,#{zjrcwd2},#{zjrjwd2},#{zjljwd2},#{zjlcwd2},#{zjrcwd3},#{zjrjwd3},#{zjljwd3},#{zjlcwd3}
+     ,#{zjrcwd4},#{zjrjwd4},#{zjljwd4},#{zjlcwd4},#{time},#{hswd},#{hrz})
+    </insert>
+    
+    
+    <select id="findHis"  resultMap="map">
+    
+     select top 3000 *  from SbHistory order by  time desc
+    
+    </select>
+    
+       
+    <select id="rbbfindHis"  resultMap="map">
+    
+   select top 3000 *  from rbbHistory order by  time desc
+    
+    </select>
+       
+    <select id="zbbfindHis"  resultMap="map">
+    
+    select top 3000 *  from zbbHistory order by  time desc
+    
+    </select>
+       
+    <select id="ybbfindHis"  resultMap="map">
+    
+    select top 3000 * from ybbHistory order by  time desc
+    
+    </select>
+    <select id="startTime" resultMap="map">
+    select top 3000 * from SbHistory
+    where 1=1
+    	<if test="hrz!=null and hrz!=''">
+		  and  hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if>
+    </select>
+    
+    <select id="rbbstartTime" resultMap="map">
+    select top 3000 * from rbbHistory
+    where 1=1
+    	<if test="hrz!=null and hrz!=''">
+		  and  hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if>
+		
+		order by id asc
+    </select>
+    
+    <select id="zbbstartTime" resultMap="map">
+    select top 3000 * from zbbHistory
+    where 1=1
+    	<if test="hrz!=null and hrz!=''">
+		  and  hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if>
+		order by id asc
+    </select>
+    
+    
+    <select id="ybbstartTime" resultMap="map">
+    select top 3000 * from ybbHistory
+    where 1=1
+    	<if test="hrz!=null and hrz!=''">
+		  and  hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if>
+		order by id asc
+    </select>
+    
+    
+    <update id="updateBj">
+    
+    update bjxx set bjv=#{value},bjstatime=#{bjstatime} where bjlx=#{bjlx}
+    
+    </update> 
+    <insert id="InsHis">
+    insert into BjHis (hrz,bjcon,bjtime) values(#{hrz},#{bjcon},#{bjtime})
+    </insert>
+    <select id="selBjxx" resultMap="map">
+  select top 2000 * from BjHis
+  where 1=1
+  <if test="hrz!=null and hrz!=''">
+		  and  hrz=#{hrz}
+		</if>
+	
+   		<if test="startTime!=null and startTime!=''">
+		  and bjtime &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and bjtime &lt;=#{endTime}
+		</if>
+      order by id desc
+    </select>
+    <select id="findendtime" resultMap="map">
+    select  top 1 * from BjHis 
+    where 1=1 
+    <if test="hrz!=null and hrz!=''">
+		 and hrz=#{hrz} 
+		</if>
+		<if test="bjcon!=null and bjcon!=''">
+		  and bjcon=#{bjcon}
+		</if>
+		order by id desc
+    </select>
+    
+    <update id="updatendtime">
+    update BjHis set endtime=#{endtime} where hrz=#{hrz} and bjtime=#{bjtime} and bjcon=#{bjcon}
+    </update>
+    <select id="selBjss"  resultMap="map">
+      select * from dbo.bjxx where bjv ='true'
+    </select>
+    <select id="selsj" resultMap="map">
+          select top 1000 zdl,ghyc,gswd,hswd,gsyl,hsyl,ssll,ssrl,axdy,bxdy,cxdy,axdl,bxdl,cxdl, time
+           from SbHistory
+           where 1=1
+           <if test="stateTime!=null and stateTime!=''">
+		  and time &gt;= #{stateTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if> 
+          
+    </select>
+    <select id="selsdrfx" resultMap="map">
+    select hrz,MAX(zdl)-MIN(zdl) as zdl,MAX(bsljll)-MIN(bsljll) as bsljll,MAX(ljll)-MIN(ljll) as ljll,MAX(ljrl)-MIN(ljrl) as ljrl 
+     from SbHistory  
+     where 1=1
+       <if test="startTime!=null and startTime!=''">
+		  and time &gt;= #{startTime}
+		</if>
+		<if test="endTime!=null and endTime!=''">
+		  and time &lt;=#{endTime}
+		</if> 
+		<if test="hrz!=null and hrz!=''">
+		  and hrz=#{hrz}
+		</if> 
+		group by hrz
+    </select>
+    <select id="getHrzXx" resultMap="map">
+    select hrz,Kxs,shijimj as sjmj from hrz
+    where 1=1
+    <if test="hrz!=null and hrz!=''">
+		  and hrz=#{hrz}
+		</if> 
+    </select>
+    <select id="selHisqx"  resultMap="map">
+    select top ${sj} * from SbHistory  order by time desc
+    </select>
+   
+    
+</mapper>
