@@ -150,10 +150,10 @@ body{height:98%;margin:0px;padding:0px}
   $(function(){
 	    //初始化地图
 	    var map = new AMap.Map('container', {
-	    	center: [113.883991,35.302616],
+	    	center: [114.3072976280,34.7972571926],
 	        /* resizeEnable: true, //是否监控地图容器尺寸变化 */
 	        mapStyle: "amap://styles/darkblue",
-	        zoom: 3,
+	        zoom: 8,
 	        viewMode:'3D',
 			size: new AMap.Size(24, 24),
 	        resizeEnable: true, 
@@ -165,12 +165,8 @@ body{height:98%;margin:0px;padding:0px}
 
 	    var markers = [{
 	        icon: '../images/navimap/normal.png',
-	        position: [113.9267500000,35.3032300000],
+	        position: [114.3809780863,34.8164014185],
 	        title:'新乡商务大厦'
-	    },{
-	        icon: '../images/navimap/normal.png',
-	        position: [116.621476,39.904907],
-	        title:'北京华誉总部'
 	    }];
 	    markers.forEach(function(marker) {
 	        new AMap.Marker({

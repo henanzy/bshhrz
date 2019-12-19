@@ -337,13 +337,19 @@ $(function(){
  				
  				if(xhbyx1==true){
  					 $(".xhbyx1").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".xhbyx1").attr('src','') 
  				}
  				
  				if(xhbyx2==true){
  					 $(".xhbyx2").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".xhbyx2").attr('src','') 
  				}
  				if(xhbyx3==true){
  					 $(".xhbyx3").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".xhbyx3").attr('src','') 
  				}
  				
  				
@@ -352,12 +358,18 @@ $(function(){
  				var ssbyx3=d.d3深水泵运行;
  				if(ssbyx1==true){
  					 $(".ssbyx1").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".ssbyx1").attr('src','') 
  				}
  				if(ssbyx2==true){
  					 $(".ssbyx2").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".ssbyx2").attr('src','') 
  				}
  				if(ssbyx3==true){
  					 $(".ssbyx3").attr('src','../images/yxgz/sy.gif') 	
+ 				}else{
+ 					 $(".ssbyx3").attr('src','') 
  				}
  				var zjycj11=d.d1主机压缩机1;
  				var zjycj12=d.d1主机压缩机2;
@@ -508,7 +520,7 @@ $(function(){
  				}
  			}
  	   });	
-	  },50000); 
+	  },1000); 
 });
 
 

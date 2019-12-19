@@ -212,6 +212,12 @@ function grfx(){
 function gryc(){
 	window.open("<%=basePath%>nhfxCon/gryc.action","Conframe");
 }
+function rysb(){
+	window.open("<%=basePath%>rysbCon/rysb.action","Conframe");
+}
+function jzsb(){
+	window.open("<%=basePath%>rysbCon/jzsb.action","Conframe");
+}
 </script>
 	<style>
         ul.ac_kf li a{
@@ -241,7 +247,9 @@ function gryc(){
                     	<a href="#" class="mws-i-24 i-users">运行管理</a>
                           <ul class="ac_kf"> 
                                 <li><a class="first-a" onclick="map()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;站点总览</a></li>
-                    	        <li><a onclick="xtkz()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;运行设备</a></li>
+                                <li><a onclick="xtkz()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;运行设备</a></li>
+                    	        <li><a onclick="jzsb()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;机组设备</a></li>
+                    	        <li><a onclick="rysb()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;热源设备</a></li>
                     	        <li><a onclick="rbjk()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;热表监控</a></li>
                     	        <!-- <li><a onclick="canssz()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;参数设置</a></li> -->
                     	        <li><a onclick="csxs()" target="Conframel">&nbsp;&nbsp;&nbsp;&nbsp;参数显示</a></li>
