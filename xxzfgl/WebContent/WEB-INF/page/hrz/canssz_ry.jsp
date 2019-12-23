@@ -201,231 +201,243 @@ th {
 			</thead>
 			<tbody>
 				<tr>
-					<th class="table-th-css">循环泵倒泵时间（h）<span class="span-up"></span>
+					<th class="table-th-css">集水器温度上限（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">舒适温度设定（℃）<span class="span-up"></span>
+					<th class="table-th-css">1#除污器前压力上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">二次压力量程上限（bar）<span class="span-up"></span>
+					<th class="table-th-css">2#热源井液位上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input value="0.70" class="csinput" id="xyfkqsx"
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
 
 				</tr>
-
+				
 				<tr>
-					<th class="table-th-css">补水泵倒泵时间（h）<span class="span-up"></span>
+					<th class="table-th-css">集水器温度下限（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input value="0.50" class="csinput" id="ecgsyl"
-						width="120px"><input type="button"  onclick="szcs('二次供水压力设定值','ecgsyl')"
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次供压过高（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input value="18" class="csinput" id="gbtjfsj"
+					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('关闭调节阀时间','gbtjfsj')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次压力量程下限（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input value="0.45" class="csinput" id="xyfgbxx"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('泄压压力下限','xyfgbxx')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-
-				</tr>
-
-				<tr>
-					<th class="table-th-css">自动温度设定（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="echsyl"
-						width="120px"><input type="button"  
-						 class="mws-button black" value="修改" onclick="szcs('二次回水压力设定值','echsyl')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次回压过低（bar）<span class="span-up"></span> 
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="bbgpqdpl"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('启动工频补水泵频率','bbgpqdpl')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">温度量程上限（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改"  /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-
-				</tr>
-
-				<tr>
-					<th class="table-th-css">手动开度设定（%）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="echsbssx" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水补水压力上限','echsbssx')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次供温度过高（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="bbgptzpl" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('停止工频补水泵频率','bbgptzpl')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">温度量程下限（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sxzdywxz" class="csinput"
-						width="120px"><input type="button"  onclick="szcs('液位下下限','sxzdywxz')"
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-
-				</tr>
-
-				<tr>
-					<th class="table-th-css">循环泵压差设定（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="echsbsxx" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水补水压力下限','echsbsxx')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次供温度过低（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="qdgpbsbsj" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('启动工频补水泵时间','qdgpbsbsj')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">时段设定1（h）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="echstjyl" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改"  onclick="szcs('二次回水停机压力','echstjyl')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-
-				</tr>
-
-				<tr>
-					<th class="table-th-css">循环泵频率设定（Hz）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sfkqsx" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">一次回温度过高（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tzgpbsbsj" class="csinput"
-						width="120px"><input type="button" onclick="szcs('停止工频补水泵时间','tzgpbsbsj')"
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-						
-					<th class="table-th-css">时段设定2（h）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tzgpbsbsj" class="csinput"
-						width="120px"><input type="button" onclick="szcs('停止工频补水泵时间','tzgpbsbsj')"
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>	
-
-				</tr>
-
-				<tr>
-					<th class="table-th-css">补水压力设定（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sfgbxx" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">二次供压高限保护（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">时段设定3（h）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-
-				</tr>
-				
-				
-				<tr>
-					<th class="table-th-css">补水频率设定（HZ）<span class="span-up"></span>
+					<th class="table-th-css">1#除污器前压力下限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sfgbxx" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">二次回压低限保护（bar）<span class="span-up"></span>
+					
+					<th class="table-th-css">2#热源井液位下限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					<th class="table-th-css">时段设定4（h）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
 
 				</tr>
 				
 				<tr>
-					<th class="table-th-css">补水睡眠频率（HZ）<span class="span-up"></span>
+					<th class="table-th-css">分水器温度上限（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sfgbxx" class="csinput"
+					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">一次压力量程上限（bar）<span class="span-up"></span>
+					
+					<th class="table-th-css">1#除污器后压力上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">时段设定5（h）<span class="span-up"></span>
+					
+					<th class="table-th-css">3#热源井液位上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+				<tr>
+					<th class="table-th-css">分水器温度下限（℃）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">1#除污器后压力下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">3#热源井液位下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
 
 				</tr>
-				<tr>
-					<th class="table-th-css">补水唤醒偏差（bar）<span class="span-up"></span>
+				
+					<tr>
+					<th class="table-th-css">配电房温度上限（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="sfgbxx" class="csinput"
+					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">一次压力量程下限（bar）<span class="span-up"></span>
+					
+					<th class="table-th-css">2#除污器前压力上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">时段设定6（h）<span class="span-up"></span>
+					
+					<th class="table-th-css">4#热源井液位上限（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="tjfzdkd" class="csinput"
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
 						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('调节阀最低开度','tjfzdkd')" /><span class="span-up"></span> <span
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
 
+				</tr>
+				
+				<tr>
+					<th class="table-th-css">配电房温度下限（℃）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">2#除污器前压力下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">4#热源井液位下限（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+
+				</tr>
+				
+				<tr>
+					<th class="table-th-css">集水器压力上限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">2#除污器后压力上限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">水箱液位上限（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+				<tr>
+					<th class="table-th-css">集水器压力下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">2#除污器后压力下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">水箱液位下限（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>	
+				
+				<tr>
+					<th class="table-th-css">分水器压力上限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">1#热源井液位上限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">1#井泵频率设定（Hz）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+				<tr>
+					<th class="table-th-css">分水器压力下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input class="csinput" id="echswd"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">1#热源井液位下限（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
+						class="span-down"></span></th>
+					
+					<th class="table-th-css">2#井泵频率设定（Hz）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input  class="csinput" id="xyfkqsx"
+						width="120px"><input type="button" 
+						 class="mws-button black" value="修改"  onclick="szcs('泄压压力上限','xyfkqsx')"/><span class="span-up"></span> <span
+						class="span-down"></span></th>
 				</tr>
 			</tbody>
 		</table>
@@ -449,14 +461,14 @@ th {
 			</thead>
 			<tbody>
 				<tr>
-					<th class="table-th-css">时段供水温度1（℃）<span class="span-up"></span>
+					<th class="table-th-css">3#井泵频率设定（Hz）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">调节阀PID积分<span class="span-up"></span>
+					<th class="table-th-css">1#除污器堵塞触发（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
@@ -465,14 +477,14 @@ th {
 				</tr>
 
                 <tr>
-					<th class="table-th-css">时段供水温度2（℃）<span class="span-up"></span>
+					<th class="table-th-css">4#井泵频率设定（Hz）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">调节阀PID微分<span class="span-up"></span>
+					<th class="table-th-css">1#除污器堵塞解除（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
@@ -480,14 +492,14 @@ th {
 						class="span-down"></span></th>
 				</tr>
                  <tr>
-					<th class="table-th-css">时段供水温度3（℃）<span class="span-up"></span>
+					<th class="table-th-css">2#除污器堵塞触发（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">循环泵PID比例<span class="span-up"></span>
+					<th class="table-th-css">水箱液位过低值（m）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
@@ -495,29 +507,14 @@ th {
 						class="span-down"></span></th>
 				</tr>
 				<tr>
-					<th class="table-th-css">时段供水温度4（℃）<span class="span-up"></span>
+					<th class="table-th-css">2#除污器堵塞解除（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input class="csinput" id="echswd"
 						width="120px"><input type="button" 
 						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css">循环泵PID积分<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				</tr>
-				<tr>
-					<th class="table-th-css">时段供水温度5（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input class="csinput" id="echswd"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					<th class="table-th-css">循环泵PID微分<span class="span-up"></span>
+					<th class="table-th-css">机组所需瞬时流量（m³/h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
 						width="120px"><input type="button" 
@@ -525,53 +522,8 @@ th {
 						class="span-down"></span></th>
 				</tr>
 				
-				<tr>
-					<th class="table-th-css">时段供水温度6（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input class="csinput" id="echswd"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					<th class="table-th-css">补水泵PID比例<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				</tr>
 				
-				<tr>
-					<th class="table-th-css">时段供水温度7（℃）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input class="csinput" id="echswd"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					<th class="table-th-css">补水泵PID积分<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				</tr>
-				
-				<tr>
-					<th class="table-th-css">调节阀PID比例<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input class="csinput" id="echswd"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('二次回水温度设定值','echswd')"/><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					<th class="table-th-css">补水泵PID微分<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input  class="csinput" id="kqtjfsj"
-						width="120px"><input type="button" 
-						 class="mws-button black" value="修改" onclick="szcs('开启调节阀时间','kqtjfsj')" /><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				</tr>
+			
 			</tbody>
 		</table>
 	</div>
