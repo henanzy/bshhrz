@@ -521,7 +521,7 @@ function xs(){
 			style="font-size: 14px; border-color: #c5d52b; background: url(../images/core/mws-header-bg.png) repeat-x;">
 			<span class="mws-report-icon mws-ic ic-building"></span> <span
 				class="mws-report-content" style="margin-top: 10px; color: #C5D52B;">
-				运行参数显示 </span>
+				1#机组运行参数</span>
 		</p>
 
 		<table>
@@ -544,23 +544,23 @@ function xs(){
 			</thead>
 			<tbody>
 				<tr>
-					<th style="width: 200px; text-align: center;">瞬时流量（m3/h）<span
+					<th style="width: 200px; text-align: center;">一次供水温度(℃)<span
 						class="span-up"></span> <span class="span-down"></span></th>
-					<th class="table-th-css"><input id="ssll" class="csinput" 
+					<th class="table-th-css"><input id="ycgswd" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 				
 					
-					<th class="table-th-css">补水累计流量（m3）<span class="span-up"></span>
+					<th class="table-th-css">一次瞬时流量（m³/h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="bsljll" class="csinput"
+					<th class="table-th-css"><input id="bsbplfk" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 						
 				
 							
 			
-					<th class="table-th-css">IA相电流（A）<span class="span-up"></span>
+					<th class="table-th-css">循环泵频率反馈(Hz)<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="axdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -568,7 +568,7 @@ function xs(){
 				</tr>
 
 				<tr>
-				<th class="table-th-css">瞬时热量（GJ/h）<span class="span-up"></span>
+				<th class="table-th-css">一次回水温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="ssrl" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
@@ -577,14 +577,14 @@ function xs(){
 					
 					
 					
-					  <th class="table-th-css">补水瞬时流量（m3/h）<span class="span-up"></span>
+					  <th class="table-th-css">一次累计流量（m³）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="bsssll" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>				
 				
 					
-							 <th class="table-th-css">IB相电流（A）<span class="span-up"></span>
+							 <th class="table-th-css">调节阀阀位反馈（％）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="bxdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -593,7 +593,7 @@ function xs(){
 				</tr>
 
 				<tr>
-				<th class="table-th-css">累计流量（m3）<span class="span-up"></span>
+				<th class="table-th-css">二次供水温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="ljll" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
@@ -602,14 +602,14 @@ function xs(){
 				
 						
 						
-					<th class="table-th-css">供水压力（bar）<span class="span-up"></span>
+					<th class="table-th-css">二次瞬时流量（m³/h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="gsyl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 						
 						
-				   	<th class="table-th-css">IC相电流（A）<span class="span-up"></span>
+				   	<th class="table-th-css">1#循环泵运行时间（h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="cxdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -617,23 +617,19 @@ function xs(){
 				</tr>
 
 				<tr>
-					<th class="table-th-css">累积热量（GJ）<span class="span-up"></span>
+					<th class="table-th-css">二次回水温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="ljrl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-				 		<th class="table-th-css">回水压力（bar）<span class="span-up"></span>
+				 		<th class="table-th-css">二次累计流量<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="hsyl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>	
 				 
- 					
- 					
- 					
- 					
-							<th class="table-th-css">UA相电压（V）<span class="span-up"></span>
+							<th class="table-th-css">2#循环泵运行时间（h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="axdy" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -643,28 +639,19 @@ function xs(){
 
 				<tr>
 				
-				<th class="table-th-css">供水温度(℃)<span class="span-up"></span>
+				<th class="table-th-css">一次供水压力（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="gswd" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 				
-				
-				
-						
-							<th class="table-th-css">液位数值（m）<span class="span-up"></span>
+							<th class="table-th-css">二次供水压力<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="sxyw" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 						
-				  
-
-
-			
-
-
-					<th class="table-th-css">UB相电压（V）<span class="span-up"></span>
+					<th class="table-th-css">1#补水泵运行时间（h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="bxdy" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
@@ -673,25 +660,21 @@ function xs(){
 				
 				<tr>
 					
-					 <th class="table-th-css">回水温度(℃)<span class="span-up"></span>
+					 <th class="table-th-css">一次回水压力（bar）<span class="span-up"></span>
 					<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="hswd" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 			
-			
-			
-			
-					
 						
-						<th class="table-th-css">变频频率（HZ）<span class="span-up"></span>
+						<th class="table-th-css">二次回水压力（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="xhbpl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 			
 						
-						<th class="table-th-css">UC相电压（V）<span class="span-up"></span>
+						<th class="table-th-css">2#补水泵运行时间（h）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="cxdy" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -699,7 +682,7 @@ function xs(){
 			</tr>
 				<tr>
 				
-							<th class="table-th-css">总电量（Wh）<span class="span-up"></span>
+							<th class="table-th-css">二次供回水压差（bar）<span class="span-up"></span>
 						<span class="span-down"></span></th>
 					<th class="table-th-css"><input id="zdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
@@ -708,81 +691,13 @@ function xs(){
 					
 						
 				
-						<th class="table-th-css">功率(KW)<span class="span-up"></span>
+						<th class="table-th-css">循环泵频率反馈（Hz）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="gl" class="csinput"
+					<th class="table-th-css"><input id="zdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css">UAB相电压（V）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="abxdy" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
 				</tr>
 				
-				
-				<tr>
-				<th class="table-th-css">供回水压差（bar）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="ghsyc"  class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				
-				
-				
-				
-				 <th class="table-th-css">功率因数(%)<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="glys" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				
-					
-					
-					
-							
-				
-						<th class="table-th-css">UAC相电压（V）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="caxdy" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					
-					
-			
-				</tr>
-					<tr>
-				
-				 <th class="table-th-css"><span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					 <th class="table-th-css"><span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-				
-			
-			
-			
-						
-			
-			
-			
-			
-			   <th class="table-th-css">UBC相电压（V）<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="bcxdy" class="csinput" 
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-			
-			
-			
-			
-			
-				</tr>
 			</tbody>
 		</table>
 
@@ -792,99 +707,465 @@ function xs(){
 			style="font-size: 14px; border-color: #c5d52b; background: url(../images/core/mws-header-bg.png) repeat-x;">
 			<span class="mws-report-icon mws-ic ic-building"></span> <span
 				class="mws-report-content" style="margin-top: 10px; color: #C5D52B;">
-				主机参数显示 </span>
+				热源部分运行参数 </span>
 		</p>
 		<table>
-			<thead>
+				<thead>
 				<tr>
-					<th class="table-th-css">主机编号</th>
-					<th class="table-th-css">热进温度（℃）</th>
-					<th class="table-th-css">热出温度（℃）</th>
-					<th class="table-th-css">冷进温度（℃）</th>
-					<th class="table-th-css">冷出温度（℃）</th>
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>	
 					
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<th class="table-th-css">1#主机<span class="span-up"></span>
-						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="rj1" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
-					
-					<th class="table-th-css"><input id="rc1" class="csinput"
+					<th style="width: 200px; text-align: center;">集水器温度（℃）<span
+						class="span-up"></span> <span class="span-down"></span></th>
+					<th class="table-th-css"><input id="ycgswd" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 				
-					<th class="table-th-css"><input id="lj1" class="csinput"
+					
+					<th class="table-th-css">1#热源井液位（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsbplfk" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css"><input id="lc1" class="csinput"
+						
+				
+							
+			
+					<th class="table-th-css">3#热井累计流量(m³)<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="axdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>	
-
+						class="span-down"></span></th>
 				</tr>
 
 				<tr>
-					<th class="table-th-css">2#主机<span class="span-up"></span>
+				<th class="table-th-css">分水器温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="rj2"  class="csinput"
+					<th class="table-th-css"><input id="ssrl" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
+						
 					
-					<th class="table-th-css"><input id="rc2" class="csinput"
+					
+					
+					  <th class="table-th-css">2#热源井液位（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsssll" class="csinput"
 						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>
+						class="span-down"></span></th>				
 				
-					<th class="table-th-css"><input id="lj2" class="csinput"
+					
+							 <th class="table-th-css">4#热井瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css"><input id="lc2" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>	
-
+							
 				</tr>
 
 				<tr>
-					<th class="table-th-css">3#主机<span class="span-up"></span>
+				<th class="table-th-css">室外温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="rj3"  class="csinput"
+					<th class="table-th-css"><input id="ljll" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					
-					<th class="table-th-css"><input id="rc3"  class="csinput"
+						
+						
+					<th class="table-th-css">3#热源井液位（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="gsyl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-				
-					<th class="table-th-css"><input id="lj3" class="csinput"
+						
+						
+				   	<th class="table-th-css">4#热井累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="cxdl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css"><input id="lc3" class="csinput"
-						width="120px"><span class="span-up"></span> <span
-						class="span-down"></span></th>	
-
 				</tr>
 
 				<tr>
-					<th class="table-th-css">4#主机<span class="span-up"></span>
+					<th class="table-th-css">配电室温度（℃）<span class="span-up"></span>
 						<span class="span-down"></span></th>
-					<th class="table-th-css"><input id="rj4"  class="csinput"
+					<th class="table-th-css"><input id="ljrl" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 					
-					<th class="table-th-css"><input id="rc4"  class="csinput"
+				 		<th class="table-th-css">4#热源井液位（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="hsyl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>	
+				 
+							<th class="table-th-css">1#除污器瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="axdy" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+ 					
+				</tr>
+
+				<tr>
+				
+				<th class="table-th-css">集水器压力（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="gswd" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
 				
-					<th class="table-th-css"><input id="lj4"  class="csinput"
+							<th class="table-th-css">水箱液位（m）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="sxyw" class="csinput"
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>
-					<th class="table-th-css"><input id="lc4"  class="csinput"
+						
+					<th class="table-th-css">1#除污器累计流量(m³)<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdy" class="csinput" 
 						width="120px"><span class="span-up"></span> <span
 						class="span-down"></span></th>	
-
 				</tr>
+				
+				<tr>
+					
+					 <th class="table-th-css">分水器压力（bar）<span class="span-up"></span>
+					<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="hswd" class="csinput" 
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+			
+						
+						<th class="table-th-css">1#热井瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="xhbpl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+			
+						
+						<th class="table-th-css">2#除污器瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="cxdy" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+			</tr>
+				<tr>
+				
+							<th class="table-th-css">1#除污器前压力（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">1#热井累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">2#除污器瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+					<tr>
+				
+							<th class="table-th-css">1#除污器后压力（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">2#热井瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">1#机组补水瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+					<tr>
+				
+							<th class="table-th-css">2#除污器前压力（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">2#热井累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">1#机组补水累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+				<tr>
+				
+							<th class="table-th-css">2#除污器后压力（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">3#热井瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">2#机组补水补水流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				<tr>
+				
+							<th class="table-th-css">1#除污器前后压力差（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">热源井总瞬时流量（m³/h）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">2#机组补水累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				<tr>
+				
+							<th class="table-th-css">2#除污器前后压力差（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">热源井总累计流量（m³）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">1#水泵流量（A）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				<tr>
+				
+							<th class="table-th-css">3#井泵频率反馈（Hz）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+						
+				
+						<th class="table-th-css">2井泵电流（A）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+						<th class="table-th-css">分水器压差（bar）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="zdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+			</tbody>
+		</table>
+			<p class="mws-report" href="#"
+			style="font-size: 14px; border-color: #c5d52b; background: url(../images/core/mws-header-bg.png) repeat-x;">
+			<span class="mws-report-icon mws-ic ic-building"></span> <span
+				class="mws-report-content" style="margin-top: 10px; color: #C5D52B;">
+				供电部分运行参数 </span>
+		</p>
+		<table>
+				<thead>
+				<tr>
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>	
+					
+					<th class="table-th-css">参数名称</th>
+					<th class="table-th-css">参数值<span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th style="width: 200px; text-align: center;">总电量（KWH）<span
+						class="span-up"></span> <span class="span-down"></span></th>
+					<th class="table-th-css"><input id="ycgswd" class="csinput" 
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				
+					
+					<th class="table-th-css">频率（Hz）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsbplfk" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+				
+							
+			
+					<th class="table-th-css">功率因数<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="axdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+
+				<tr>
+				<th class="table-th-css">A项线电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="ssrl" class="csinput" 
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+					
+					
+					  <th class="table-th-css">A相电流（A）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsssll" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>				
+				
+					
+							 <th class="table-th-css">AB相电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+							
+				</tr>
+
+				<tr>
+				<th class="table-th-css">B项线电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="ssrl" class="csinput" 
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+					
+					
+					  <th class="table-th-css">B相电流（A）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsssll" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>				
+				
+					
+							 <th class="table-th-css">BC相电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+							
+				</tr>
+
+				<tr>
+					<th class="table-th-css">C项线电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="ssrl" class="csinput" 
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+						
+					
+					
+					
+					  <th class="table-th-css">C相电流（A）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bsssll" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>				
+				
+					
+							 <th class="table-th-css">AC相电压（V）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+							
+				</tr>
+
+				<tr>
+				
+				<th class="table-th-css">有功功率（KW）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="gswd" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				
+							<th class="table-th-css">无功功率（KW）<span class="span-up"></span>
+						<span class="span-down"></span></th>
+					<th class="table-th-css"><input id="bxdl" class="csinput"
+						width="120px"><span class="span-up"></span> <span
+						class="span-down"></span></th>
+				</tr>
+				
+				
 			</tbody>
 		</table>
 	</div>
